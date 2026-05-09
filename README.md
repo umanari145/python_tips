@@ -23,7 +23,7 @@ pip freeze > requirements.txt
 
 
 複数のpythonの環境をインストールするには・・・(dockerの外から行う)
-````
+```
 brew install pyenv
 pyenv install 3.14.0
 # 特定のフォルダのみにインストール
