@@ -39,7 +39,7 @@ eval "$(pyenv init - zsh)"
 ``` 
 python3.14 -m venv env
 ```
-envファイルの中に一時的な環境がつくられる<br>
+envディレクトリの中に一時的な環境がつくられる<br>
 一時的なライブラリ置き場でPHPのvendorなどに近い
 ```
 source env/bin/activate
