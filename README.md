@@ -35,3 +35,21 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
 ```
+##　仮想環境の構築
+``` 
+python3.14 -m venv env
+```
+envファイルの中に一時的な環境がつくられる
+
+```
+source env/bin/activate
+(env) **********% 
+
+参照するpythonの場所
+which python 
+**********/env/bin/python
+
+無効化する
+deactivate env/bin/activate
+
+```
