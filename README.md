@@ -100,4 +100,13 @@ uv add sampleproject
 
 uv run python --version
 uv run which python
+
+uv.lockライブラリの固定状態をみるのが目的でPHPのcomposer.lockに当たる
+```
+
+自分的メモ
+```
+uv 仮想環境構築ツール&パッケージ管理ツール
+uv sync = composer install
+pyproject.tomlで管理していればrequirements.txtは不要
 ```
