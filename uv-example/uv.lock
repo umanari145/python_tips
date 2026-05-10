@@ -12,6 +12,15 @@ wheels = [
 ]
 
 [[package]]
+name = "retrying"
+version = "1.4.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/c8/5a/b17e1e257d3e6f2e7758930e1256832c9ddd576f8631781e6a072914befa/retrying-1.4.2.tar.gz", hash = "sha256:d102e75d53d8d30b88562d45361d6c6c934da06fab31bd81c0420acb97a8ba39", size = 11411, upload-time = "2025-08-03T03:35:25.189Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/67/f3/6cd296376653270ac1b423bb30bd70942d9916b6978c6f40472d6ac038e7/retrying-1.4.2-py3-none-any.whl", hash = "sha256:bbc004aeb542a74f3569aeddf42a2516efefcdaff90df0eb38fbfbf19f179f59", size = 10859, upload-time = "2025-08-03T03:35:23.829Z" },
+]
+
+[[package]]
 name = "sampleproject"
 version = "4.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -28,8 +37,12 @@ name = "uv-example"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "retrying" },
     { name = "sampleproject" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "sampleproject", specifier = ">=4.0.0" }]
+requires-dist = [
+    { name = "retrying", specifier = ">=1.4.2" },
+    { name = "sampleproject", specifier = ">=4.0.0" },
+]
